@@ -1,4 +1,7 @@
 <h2>Subdivision Data:</h2>
+<!-- Show while loading Data -->
 <h4 *ngIf="loadingStatus">{{ loading }}</h4>
+<!-- Show if api call fails -->
 <h4 *ngIf="httpError">{{ errorState }}</h4>
+<!-- show once the data is loaded from the api -->
 <app-data-table *ngIf="allSubdivisions && allSubdivisions.length > 0" [allSubs]="allSubdivisions"></app-data-table>

@@ -24,6 +24,7 @@ export class SubdivisionDataDisplayComponent implements OnInit {
     this.getData();
   }
 
+  // Get data by making an api call through the http service for all subdivision data
   public getData () {
     this.loadingStatus = true;
     this.httpError = false;
