@@ -1,1 +1,3 @@
-<p>Display the subdivision data here!</p>
+<h2>Subdivision Data:</h2>
+<h4 *ngIf="!allSubdivisions">Loading... :)</h4>
+<app-data-table *ngIf="allSubdivisions && allSubdivisions.length > 0" [allSubs]="allSubdivisions"></app-data-table>
