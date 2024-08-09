@@ -33,6 +33,7 @@ export class DataTableComponent implements AfterViewInit {
     this.dataSource.sort = this.sort;
   }
 
+  // filter data based on status 
   filterData(event: any) {
     let newData: any[] = [];
     
@@ -56,6 +57,7 @@ export class DataTableComponent implements AfterViewInit {
     this.dataSource.sort = this.sort;
   }
 
+  // Sort Data available in the table by date time
   sortByDateTime(event: any) {
     let array = this.dataSource.filteredData;
     let sortedArray = [];

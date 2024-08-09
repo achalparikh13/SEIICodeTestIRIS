@@ -12,6 +12,7 @@ export class HttpServiceService {
 
   constructor(private http: HttpClient) { }
 
+  // get all subdivision data from the api 
   getAllSubdivisions () {
     return this.http.get<SubDivisionInfo>(this.getAllSubdivisionsUrl);
   }
