@@ -29,7 +29,6 @@ export class DataTableComponent implements AfterViewInit {
 
   ngAfterViewInit() {
     this.dataSource = new MatTableDataSource<SubDivisionInfo>(this.allSubs);
-
     this.dataSource.paginator = this.paginator;
     this.dataSource.sort = this.sort;
   }
