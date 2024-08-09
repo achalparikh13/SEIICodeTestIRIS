@@ -21,8 +21,8 @@ fdescribe('DataTableComponent', () => {
     expect(component).toBeTruthy();
   });
 
-  // Test Filter Data
+  // Test Filter Data on all values
 
-  // Test Data Sorting
+  // Test Data Sorting both ways
   
 });
